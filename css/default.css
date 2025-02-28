@@ -1,0 +1,57 @@
+/* Container for the fieldsets */
+.box-container {
+    display: flex;
+    overflow-x: hidden; /* Allow horizontal scrolling */
+    width: 100%;
+    /*scroll-snap-type: x mandatory; !* Enables snapping to each box *!*/
+    /*scroll-behavior: smooth; !* Smooth scrolling *!*/
+    /*-webkit-overflow-scrolling: touch; !* For improved scrolling on mobile *!*/
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.box-container::-webkit-scrollbar { /* Chrome, Safari and Opera */
+    display: none;
+}
+
+/* Each fieldset (box) */
+.box {
+    scroll-snap-align: start; /* Each box snaps to the start */
+    flex-shrink: 0; /* Prevents boxes from shrinking */
+    width: 100%; /* Each box takes full width */
+    min-width: 100%;
+    box-sizing: content-box; /* Include padding in width calculation */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    display: none; /* Initially hide all boxes */
+}
+
+/* Initially hide all fieldsets */
+.box {
+    display: none; /* Hide all initially */
+}
+
+/* Display the active and subsequent fieldsets */
+.box.is-active {
+    display: block;
+    transform: translateX(0);
+}
+
+.box.is-active ~ .box { /* Adjacent sibling selector */
+    display: block;
+}
+
+.is-active + fieldset + fieldset + fieldset {
+    display: block;
+}
+
+
+/*!* Optional Bulma styling adjustments *!*/
+/*.box {*/
+/*    border: 1px solid #dbdbdb; !* Add a border (optional) *!*/
+/*    border-radius: 5px;*/
+/*    margin-bottom: 1rem;*/
+/*}*/

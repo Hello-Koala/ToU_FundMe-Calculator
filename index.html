@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+    <title>Fund Me - Fund Your Dream Project</title>
+</head>
+<body>
+<header class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="img/logo-fund-me.png" alt="Logo Fund Me - Fund Your Dream Project"
+                     title="Fund Me - Fund Your Dream Project"/>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        About
+                    </a>
+
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <section class="section hero is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <h1 class="title">
+                        Fund Me - Fund Your Dream Project
+                    </h1>
+                    <p>Found your dream house or an investment property, but renovations are too expensive?</p>
+                    <p>We support decarbonization in the building sector and want to provide you with the best funding
+                        program for your project.</p>
+                    <h2 class="subtitle mt-3">Check your eligibility with just a few clicks</h2>
+                </div>
+                <div class="tabs is-toggle is-fullwidth">
+                    <ul>
+                        <li class="is-active">
+                            <a class="next-button">
+                                <span class="icon is-small"><i class="fa-solid fa-list-check"
+                                                               aria-hidden="true"></i></span>
+                                <span>Step 1: Basic Information</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="next-button">
+                                <span class="icon is-small"><i class="fa-solid fa-file-invoice-dollar"
+                                                               aria-hidden="true"></i></i></span>
+                                <span>Step 2: Cost & Income Information</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="next-button">
+                                <span class="icon is-small"><i class="fa-solid fa-user-check"
+                                                               aria-hidden="true"></i></span>
+                                <span>Step 3: Eligibility Check</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="next-button">
+                                <span class="icon is-small"><i class="fa-solid fa-seedling"
+                                                               aria-hidden="true"></i></span>
+                                <span>Step 4: Results</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form enctype="multipart/form-data" method="post" action="/api">
+                    <div class="box-container mb-6">
+                        <fieldset class="box field is-active">
+                            <div class="content">
+                                <progress class="progress is-info" value="25" max="100">
+                                    25%
+                                </progress>
+                                <h3 class="subtitle is-3">What type of property do you want to renovate?</h3>
+                                <div class="control">
+                                    <label class="radio" for="questionTypeOfPropertySingleFamilyHouse">
+                                        <input type="radio" id="questionTypeOfPropertySingleFamilyHouse" name="questionTypeOfProperty" value="Single-family house"/>
+                                        Single-family house</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="questionTypeOfPropertyMultiFamilyHouse">
+                                        <input type="radio" id="questionTypeOfPropertyMultiFamilyHouse" name="questionTypeOfPropertyMultiFamilyHouse" value="Multi-family house"/>
+                                        Multi-family house</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="questionTypeOfPropertyComercialBuilding">
+                                        <input type="radio" id="questionTypeOfPropertyComercialBuilding" name="questionTypeOfPropertyComercialBuilding" value="Commercial building"/>
+                                        Commercial building</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="questionTypeOfPropertyApartment">
+                                        <input type="radio" id="questionTypeOfPropertyApartment" name="questionTypeOfPropertyApartment" value="Apartment (Condo)"/>
+                                        Apartment (Condo)</label>
+                                </div>
+                                <h3 class="subtitle is-3">When was the building constructed?</h3>
+                                <div class="control">
+                                    <label class="radio" for="questionYearConstruction1950">
+                                        <input type="radio" id="questionYearConstruction1950" name="questionYearConstruction1950" value="Before 1950"/>
+                                        Before 1950</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="questionYearConstruction1990">
+                                        <input type="radio" id="questionYearConstruction1990" name="questionYearConstruction1990" value="1950-1990"/>
+                                        1950-1990</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="questionYearConstructionAfter1990">
+                                        <input type="radio" id="questionYearConstructionAfter1990" name="questionYearConstructionAfter1990" value="After 1990"/>
+                                        After 1990</label>
+                                </div>
+                                <div class="mt-3 mb-3 notification is-success">💡 Why? Some programs target older
+                                    buildings that
+                                    need
+                                    higher energy
+                                    upgrades.
+                                </div>
+                                <h3 class="subtitle is-3">What is your current heating system?</h3>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question2" value=""/> Gas heating</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question2" value=""/> Oil heating</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question2" value=""/> Electric heating</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question2" value=""/> Heat pump</label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question2" value=""/> Wood/Pellet heating</label>
+                                </div>
+                                <div class="mt-3 mb-3 notification is-success">💡 Why? Some subsidies are only for
+                                    switching away from fossil fuels.
+                                </div>
+                                <h3 class="subtitle is-3">What renovation measures do you plan?</h3>
+                                <div class="control">
+                                    <label class="checkbox" for="question1">
+                                        <input type="checkbox" name="question2" value=""/> Insulation (roof, walls,
+                                        windows, doors)</label>
+                                </div>
+                                <div class="control">
+                                    <label class="checkbox" for="question1">
+                                        <input type="checkbox" name="question2" value=""/> Heating replacement (e.g.,
+                                        heat pump, biomass, district heating)</label>
+                                </div>
+                                <div class="control">
+                                    <label class="checkbox" for="question1">
+                                        <input type="checkbox" name="question2" value=""/> Solar panels (PV
+                                        system)</label>
+                                </div>
+                                <div class="control">
+                                    <label class="checkbox" for="question1">
+                                        <input type="checkbox" name="question2" value=""/> Ventilation system with heat
+                                        recovery</label>
+                                </div>
+                                <div class="control">
+                                    <label class="checkbox" for="question1">
+                                        <input type="checkbox" name="question2" value=""/> Complete energy-efficient
+                                        renovation (Effizienzhaus standard)</label>
+                                </div>
+                                <div class="has-text-centered mt-3 mb-3">
+                                    <button class="button is-success next-button">
+                                <span class="icon is-small">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
+                                        <span>Add your cost and income information</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box field">
+                            <div class="content">
+                                <progress class="progress is-info" value="50" max="100">
+                                    50%
+                                </progress>
+                                <h3 class="subtitle is-3"><label for="">What is your estimated renovation
+                                    budget?</label></h3>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-medium" type="number" min="0" max="1000000000" step="1000"
+                                           placeholder="50,000"/>
+                                    <span class="icon is-left">
+                                    <i class="fa-solid fa-euro-sign"></i>
+                                  </span>
+                                    <span class="icon is-right">,
+                                    <i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i>
+                                  </span>
+                                </div>
+                                <h3 class="subtitle is-3">What is your household’s gross annual income?</h3>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question3" value=""/> Below €30,000
+                                    </label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question3" value=""/> €30,000 - €60,000
+                                    </label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question3" value=""/> €30,000 - €90,000
+                                    </label>
+                                </div>
+                                <div class="control">
+                                    <label class="radio" for="question1">
+                                        <input type="radio" name="question3" value=""/> Above €90,000
+                                    </label>
+                                </div>
+                                <div class="mt-3 mb-3 notification is-success">💡 Why? Some programs (e.g., social
+                                    housing grants) depend on income.
+                                </div>
+                                <div class="has-text-centered mt-3 mb-3">
+                                    <button id="check-eligibility" type="submit" class="button is-success next-button">
+                                <span class="icon is-small">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
+                                        <span>Check your project eligibility</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box field">
+                            <div class="content">
+                                <progress class="progress is-info" value="75" max="100">
+                                    75%
+                                </progress>
+                                <div class="has-text-centered is-success is-palette-success">
+                                    <h2 class="title is-1 is-success">
+                                <span class="icon is-large is-success"><i
+                                        class="fa-solid fa-hand-holding-heart"></i></span>
+                                    </h2>
+                                    <h3 class="subtitle is-3 is-success">Congratulations! Your project matches a funding
+                                        program.</h3>
+                                    <button class="button is-success mt-3 mb-3 next-button">
+                                <span class="icon is-small">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
+                                        <span>View matching programs and estimated amount</span>
+                                    </button>
+                                </div>
+                                <div class="has-text-centered is-danger is-palette-danger is-hidden">
+                                    <h2 class="title is-1 has-text-centered is-danger">
+                                <span class="icon is-large is-danger"><i
+                                        class="fa-solid fa-house-medical-circle-xmark"></i></span>
+                                    </h2>
+                                    <h3 class="subtitle is-3 is-danger">We are sorry, your project does not match a
+                                        funding
+                                        program at the moment</h3>
+                                    <button class="button is-danger mt-3 mb-3">
+                                <span class="icon is-small">
+                                    <i class="fa-solid fa-bell"></i>
+                                </span>
+                                        <span>Click to here to be notified if things change</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="box field">
+                            <progress class="progress is-info" value="100" max="100">
+                                100%
+                            </progress>
+                            <h3 class="subtitle is-3">Choose your best matching funding program</h3>
+                            <div class="grid">
+                                <div class="cell has-background-info is-info">
+                                    <article class="media m-2">
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>Kreditanstalt für Wiederaufbau (KfW) -
+                                                        Energieeffizienz-Förderprogramm</strong>
+                                                    <br/>
+                                                    A program offered by the KfW bank that provides funding for
+                                                    energy-efficient
+                                                    renovations, including solar panels and heat pumps.
+                                                </p>
+                                            </div>
+                                            <nav class="level is-mobile">
+                                                <div class="level-left">
+                                                    <a href="https://www.kfw.de/KfW-Group/Media-Center/Pressemitteilungen/2019/Okt/KfW-F%C3%B6rdervorhaben-f%C3%BCr-Energieeffizienz-2020-2022.html"
+                                                       class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-file-lines"></i></span>
+                                                    </a>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="cell has-background-info is-info">
+                                    <article class="media m-2">
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>Baukindergeld - Förderprogramm für Familien</strong>
+                                                    <br/>
+                                                    A program that offers financial support to families for the
+                                                    renovation of their
+                                                    homes, with a focus on child-friendly design and safety features.
+                                                </p>
+                                            </div>
+                                            <nav class="level is-mobile">
+                                                <div class="level-left">
+                                                    <a href="https://www.bundesbauministerium.de/Themen/Bauen-und-Wohnen/Förderprogramme/Baukindergeld"
+                                                       class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-file-lines"></i></span>
+                                                    </a>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="cell has-background-info is-info">
+                                    <article class="media m-2">
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>KfW-Förderprogramm für Energieeffizienz</strong>
+                                                    <br/>
+                                                    A program that provides funding for energy-efficient measures,
+                                                    including
+                                                    insulation and renewable energies.
+                                                </p>
+                                            </div>
+                                            <nav class="level is-mobile">
+                                                <div class="level-left">
+                                                    <a href="https://www.kfw.de/KfW-Group/Media-Center/Pressemitteilungen/2019/Okt/KfW-F%C3%B6rdervorhaben-f%C3%BCr-Energieeffizienz-2020-2022.html"
+                                                       class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
+                                                    </a>
+                                                    <a class="level-item">
+                                                        <span class="icon is-small"><i
+                                                                class="fa-solid fa-file-lines"></i></span>
+                                                    </a>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!--<h1>Hello, Alana!</h1>-->
+<!--<button id="getData">Get Data</button>-->
+<!--<div id="output"></div>-->
+<script type="application/javascript" src="js/app.js"></script>
+
+</body>
+</html>
