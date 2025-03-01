@@ -103,94 +103,113 @@
                                 <h3 class="subtitle is-3">What type of property do you want to renovate?</h3>
                                 <div class="control">
                                     <label class="radio" for="questionTypeOfPropertySingleFamilyHouse">
-                                        <input type="radio" id="questionTypeOfPropertySingleFamilyHouse" name="questionTypeOfProperty" value="Single-family house"/>
+                                        <input type="radio" id="questionTypeOfPropertySingleFamilyHouse"
+                                               name="questionTypeOfProperty" value="Single-family house"/>
                                         Single-family house</label>
                                 </div>
                                 <div class="control">
                                     <label class="radio" for="questionTypeOfPropertyMultiFamilyHouse">
-                                        <input type="radio" id="questionTypeOfPropertyMultiFamilyHouse" name="questionTypeOfPropertyMultiFamilyHouse" value="Multi-family house"/>
+                                        <input type="radio" id="questionTypeOfPropertyMultiFamilyHouse"
+                                               name="questionTypeOfProperty" value="Multi-family house"/>
                                         Multi-family house</label>
                                 </div>
                                 <div class="control">
                                     <label class="radio" for="questionTypeOfPropertyComercialBuilding">
-                                        <input type="radio" id="questionTypeOfPropertyComercialBuilding" name="questionTypeOfPropertyComercialBuilding" value="Commercial building"/>
+                                        <input type="radio" id="questionTypeOfPropertyComercialBuilding"
+                                               name="questionTypeOfProperty" value="Commercial building"/>
                                         Commercial building</label>
                                 </div>
                                 <div class="control">
                                     <label class="radio" for="questionTypeOfPropertyApartment">
-                                        <input type="radio" id="questionTypeOfPropertyApartment" name="questionTypeOfPropertyApartment" value="Apartment (Condo)"/>
+                                        <input type="radio" id="questionTypeOfPropertyApartment"
+                                               name="questionTypeOfProperty" value="Apartment (Condo)"/>
                                         Apartment (Condo)</label>
                                 </div>
                                 <h3 class="subtitle is-3">When was the building constructed?</h3>
                                 <div class="control">
                                     <label class="radio" for="questionYearConstruction1950">
-                                        <input type="radio" id="questionYearConstruction1950" name="questionYearConstruction1950" value="Before 1950"/>
+                                        <input type="radio" id="questionYearConstruction1950"
+                                               name="questionYearConstruction" value="Before 1950"/>
                                         Before 1950</label>
                                 </div>
                                 <div class="control">
                                     <label class="radio" for="questionYearConstruction1990">
-                                        <input type="radio" id="questionYearConstruction1990" name="questionYearConstruction1990" value="1950-1990"/>
+                                        <input type="radio" id="questionYearConstruction1990"
+                                               name="questionYearConstruction" value="1950-1990"/>
                                         1950-1990</label>
                                 </div>
                                 <div class="control">
                                     <label class="radio" for="questionYearConstructionAfter1990">
-                                        <input type="radio" id="questionYearConstructionAfter1990" name="questionYearConstructionAfter1990" value="After 1990"/>
+                                        <input type="radio" id="questionYearConstructionAfter1990"
+                                               name="questionYearConstruction" value="After 1990"/>
                                         After 1990</label>
                                 </div>
                                 <div class="mt-3 mb-3 notification is-success">💡 Why? Some programs target older
-                                    buildings that
-                                    need
-                                    higher energy
-                                    upgrades.
+                                    buildings that need higher energy upgrades.
                                 </div>
                                 <h3 class="subtitle is-3">What is your current heating system?</h3>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question2" value=""/> Gas heating</label>
+                                    <label class="radio" for="questionCurrentHeatingGas">
+                                        <input type="radio" id="questionCurrentHeatingGas" name="heatingSystem"
+                                               value="Gas heating"/> Gas heating</label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question2" value=""/> Oil heating</label>
+                                    <label class="radio" for="questionCurrentHeatingOil">
+                                        <input type="radio" id="questionCurrentHeatingOil" name="heatingSystem"
+                                               value="Oil heating"/> Oil heating</label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question2" value=""/> Electric heating</label>
+                                    <label class="radio" for="questionCurrentHeatingElectric">
+                                        <input type="radio" id="questionCurrentHeatingElectric" name="heatingSystem"
+                                               value="Electric heating"/> Electric heating</label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question2" value=""/> Heat pump</label>
+                                    <label class="radio" for="questionCurrentHeatingPump">
+                                        <input type="radio" id="questionCurrentHeatingPump" name="heatingSystem"
+                                               value="Heat pump"/> Heat pump</label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question2" value=""/> Wood/Pellet heating</label>
+                                    <label class="radio" for="questionCurrentHeatingPellet">
+                                        <input type="radio" id="questionCurrentHeatingPellet" name="heatingSystem"
+                                               value="Wood/Pellet heating"/> Wood/Pellet heating</label>
                                 </div>
                                 <div class="mt-3 mb-3 notification is-success">💡 Why? Some subsidies are only for
                                     switching away from fossil fuels.
                                 </div>
                                 <h3 class="subtitle is-3">What renovation measures do you plan?</h3>
                                 <div class="control">
-                                    <label class="checkbox" for="question1">
-                                        <input type="checkbox" name="question2" value=""/> Insulation (roof, walls,
+                                    <label class="checkbox" for="renovationMeasureInsulation">
+                                        <input type="checkbox" id="renovationMeasureInsulation"
+                                               name="renovationMeasure[]" value="Insulation (roof, walls,
+                                        windows, doors)"/> Insulation (roof, walls,
                                         windows, doors)</label>
                                 </div>
                                 <div class="control">
-                                    <label class="checkbox" for="question1">
-                                        <input type="checkbox" name="question2" value=""/> Heating replacement (e.g.,
+                                    <label class="checkbox" for="renovationMeasureHeating">
+                                        <input type="checkbox" id="renovationMeasureHeating" name="renovationMeasure[]"
+                                               value="Heating replacement (e.g.,
+                                        heat pump, biomass, district heating)"/> Heating replacement (e.g.,
                                         heat pump, biomass, district heating)</label>
                                 </div>
                                 <div class="control">
-                                    <label class="checkbox" for="question1">
-                                        <input type="checkbox" name="question2" value=""/> Solar panels (PV
+                                    <label class="checkbox" for="renovationMeasureSolar">
+                                        <input type="checkbox" id="renovationMeasureSolar" name="renovationMeasure[]"
+                                               value="Solar panels (PV
+                                        system)"/> Solar panels (PV
                                         system)</label>
                                 </div>
                                 <div class="control">
-                                    <label class="checkbox" for="question1">
-                                        <input type="checkbox" name="question2" value=""/> Ventilation system with heat
+                                    <label class="checkbox" for="renovationMeasureVentilation">
+                                        <input type="checkbox" id="renovationMeasureVentilation"
+                                               name="renovationMeasure[]" value="Ventilation system with heat
+                                        recovery"/> Ventilation system with heat
                                         recovery</label>
                                 </div>
                                 <div class="control">
-                                    <label class="checkbox" for="question1">
-                                        <input type="checkbox" name="question2" value=""/> Complete energy-efficient
+                                    <label class="checkbox" for="renovationMeasureComplete">
+                                        <input type="checkbox" id="renovationMeasureComplete" name="renovationMeasure[]"
+                                               value="Complete energy-efficient
+                                        renovation (Effizienzhaus standard)"/> Complete energy-efficient
                                         renovation (Effizienzhaus standard)</label>
                                 </div>
                                 <div class="has-text-centered mt-3 mb-3">
@@ -208,10 +227,12 @@
                                 <progress class="progress is-info" value="50" max="100">
                                     50%
                                 </progress>
-                                <h3 class="subtitle is-3"><label for="">What is your estimated renovation
+                                <h3 class="subtitle is-3"><label for="renovationBudget">What is your estimated
+                                    renovation
                                     budget?</label></h3>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-medium" type="number" min="0" max="1000000000" step="1000"
+                                    <input class="input is-medium" id="renovationBudget" name="renovationBudget"
+                                           type="number" min="0" max="1000000000" step="1000"
                                            placeholder="50,000"/>
                                     <span class="icon is-left">
                                     <i class="fa-solid fa-euro-sign"></i>
@@ -222,23 +243,27 @@
                                 </div>
                                 <h3 class="subtitle is-3">What is your household’s gross annual income?</h3>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question3" value=""/> Below €30,000
+                                    <label class="radio" for="householdIncomeBelow30">
+                                        <input type="radio" id="householdIncomeBelow30" name="householdIncome"
+                                               value="Below €30,000"/> Below €30,000
                                     </label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question3" value=""/> €30,000 - €60,000
+                                    <label class="radio" for="householdIncome30-60">
+                                        <input type="radio" id="householdIncome30-60" name="householdIncome"
+                                               value="€30,000 - €60,000"/> €30,000 - €60,000
                                     </label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question3" value=""/> €30,000 - €90,000
+                                    <label class="radio" for="householdIncome60-90">
+                                        <input type="radio" id="householdIncome60-90" name="householdIncome"
+                                               value="€60,000 - €90,000"/> €60,000 - €90,000
                                     </label>
                                 </div>
                                 <div class="control">
-                                    <label class="radio" for="question1">
-                                        <input type="radio" name="question3" value=""/> Above €90,000
+                                    <label class="radio" for="householdIncomeAbove90">
+                                        <input type="radio" id="householdIncomeAbove90" name="householdIncome"
+                                               value="Above €90,000"/> Above €90,000
                                     </label>
                                 </div>
                                 <div class="mt-3 mb-3 notification is-success">💡 Why? Some programs (e.g., social
@@ -252,10 +277,15 @@
                                         <span>Check your project eligibility</span>
                                     </button>
                                 </div>
+                                <div id="result-loading" class="has-text-centered is-hidden">
+                                    <span class="tag is-link is-medium icon-text">
+                                        <span class="icon is-small"><i class="fa-solid fa-spinner"></i></span> <span>Loading programs available, please wait...</span>
+                                    </span>
+                                </div>
                             </div>
                         </fieldset>
                         <fieldset class="box field">
-                            <div class="content">
+                            <div id="result-eligible" class="content">
                                 <progress class="progress is-info" value="75" max="100">
                                     75%
                                 </progress>
@@ -273,7 +303,9 @@
                                         <span>View matching programs and estimated amount</span>
                                     </button>
                                 </div>
-                                <div class="has-text-centered is-danger is-palette-danger is-hidden">
+                            </div>
+                            <div id="result-not-eligible" class="content is-hidden">
+                                <div class="has-text-centered is-danger is-palette-danger">
                                     <h2 class="title is-1 has-text-centered is-danger">
                                 <span class="icon is-large is-danger"><i
                                         class="fa-solid fa-house-medical-circle-xmark"></i></span>
@@ -296,99 +328,7 @@
                             </progress>
                             <h3 class="subtitle is-3">Choose your best matching funding program</h3>
                             <div class="grid">
-                                <div class="cell has-background-info is-info">
-                                    <article class="media m-2">
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>Kreditanstalt für Wiederaufbau (KfW) -
-                                                        Energieeffizienz-Förderprogramm</strong>
-                                                    <br/>
-                                                    A program offered by the KfW bank that provides funding for
-                                                    energy-efficient
-                                                    renovations, including solar panels and heat pumps.
-                                                </p>
-                                            </div>
-                                            <nav class="level is-mobile">
-                                                <div class="level-left">
-                                                    <a href="https://www.kfw.de/KfW-Group/Media-Center/Pressemitteilungen/2019/Okt/KfW-F%C3%B6rdervorhaben-f%C3%BCr-Energieeffizienz-2020-2022.html"
-                                                       class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-file-lines"></i></span>
-                                                    </a>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="cell has-background-info is-info">
-                                    <article class="media m-2">
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>Baukindergeld - Förderprogramm für Familien</strong>
-                                                    <br/>
-                                                    A program that offers financial support to families for the
-                                                    renovation of their
-                                                    homes, with a focus on child-friendly design and safety features.
-                                                </p>
-                                            </div>
-                                            <nav class="level is-mobile">
-                                                <div class="level-left">
-                                                    <a href="https://www.bundesbauministerium.de/Themen/Bauen-und-Wohnen/Förderprogramme/Baukindergeld"
-                                                       class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-file-lines"></i></span>
-                                                    </a>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="cell has-background-info is-info">
-                                    <article class="media m-2">
-                                        <div class="media-content">
-                                            <div class="content">
-                                                <p>
-                                                    <strong>KfW-Förderprogramm für Energieeffizienz</strong>
-                                                    <br/>
-                                                    A program that provides funding for energy-efficient measures,
-                                                    including
-                                                    insulation and renewable energies.
-                                                </p>
-                                            </div>
-                                            <nav class="level is-mobile">
-                                                <div class="level-left">
-                                                    <a href="https://www.kfw.de/KfW-Group/Media-Center/Pressemitteilungen/2019/Okt/KfW-F%C3%B6rdervorhaben-f%C3%BCr-Energieeffizienz-2020-2022.html"
-                                                       class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i class="fa-solid fa-file-pdf"></i></span>
-                                                    </a>
-                                                    <a class="level-item">
-                                                        <span class="icon is-small"><i
-                                                                class="fa-solid fa-file-lines"></i></span>
-                                                    </a>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                    </article>
+                                <div id="result-programs" class="cell">
                                 </div>
                             </div>
                         </fieldset>
@@ -398,9 +338,22 @@
         </div>
     </section>
 </main>
-<!--<h1>Hello, Alana!</h1>-->
-<!--<button id="getData">Get Data</button>-->
-<!--<div id="output"></div>-->
+<div id="card-template" class="is-hidden m-3">
+    <div class="content">
+        <h3 class="title is-3 card-content-title">
+            [PLACEHOLDER_TITLE]
+        </h3>
+        <h4 class="is-5 card-content-reason">[PLACEHOLDER_REASON]</h4>
+        <p class="card-content-description">[PLACEHOLDER_DESCRIPTION]</p>
+        <div class="buttons">
+            <a href="[PLACEHOLDER_URL]" target="_blank" class="card-footer-link button is-link is-light is-small icon-text">
+                <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span> <span>Visit website</span>
+            </a>
+            <a href="#" class="button is-link is-light is-small icon-text"><span class="icon"><i class="fa-solid fa-file-pdf"></i></span> <span>Download PDF</span></a>
+        </div>
+    </div>
+    <hr />
+</div>
 <script type="application/javascript" src="js/app.js"></script>
 
 </body>
